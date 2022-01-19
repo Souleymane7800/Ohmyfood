@@ -1,7 +1,4 @@
 {
-  "dependencies": {
-    "sass": "^1.48.0"
-  },
   "name": "ohmyfood",
   "version": "1.0.0",
   "description": "Projet 3 Openclassrooms",
@@ -10,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "SD",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.0"
+  }
 }
