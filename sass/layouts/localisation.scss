@@ -1,0 +1,14 @@
+.localisation
+{
+    display: flex;
+    background-color: #f3f3f3;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    & .localisation__icon{
+    font-size: 1.3rem;
+    }
+}

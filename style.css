@@ -7,8 +7,13 @@
 }
 
 body {
+  max-width: 420px;
   margin: 0;
   font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding: 0 1rem;
 }
 
 /* Header */
@@ -20,7 +25,6 @@ header {
   padding: 0.5rem;
 }
 
-/* Partie localisation */
 .localisation {
   display: flex;
   background-color: #f3f3f3;
@@ -31,8 +35,7 @@ header {
   font-size: 1rem;
   padding: 0.5rem;
 }
-
-.localisation__icon {
+.localisation .localisation__icon {
   font-size: 1.3rem;
 }
 
@@ -40,31 +43,69 @@ header {
 .reservation {
   text-align: center;
 }
-
-.reservation__btn {
+.reservation .reservation__btn {
   margin: 15px 0px;
   padding: 1rem;
   border-radius: 2rem;
   border: none;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
   color: #fff;
   font-size: 1.5rem;
-  box-shadow: 1px 3px 15px 3px rgba(0, 0, 0, 0.43);
   transition: transform 100ms;
+  box-shadow: 1px 3px 15px 3px rgba(0, 0, 0, 0.43);
 }
-
-.reservation__btn:hover {
+.reservation .reservation__btn:hover {
   transform: scale(1.03);
   opacity: 0.8;
 }
-
-.reservation__title {
+.reservation .reservation__title {
   margin-top: 2rem;
   font-size: 2rem;
 }
-
-.reservation__subtitle {
+.reservation .reservation__subtitle {
   font-size: 1rem;
+}
+
+.selection ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 420px) {
+  .selection ol {
+    flex-direction: column;
+  }
+}
+.selection li {
+  position: relative;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 1px 3px 15px 3px rgba(0, 0, 0, 0.43);
+}
+.selection li::before {
+  content: counter(numbers);
+  counter-increment: numbers;
+  background-color: #9356dc;
+  color: white;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1rem;
+  left: -1.2rem;
+}
+.selection li:hover {
+  transform: scale(1.03);
+}
+.selection li i.fas {
+  margin-right: 1rem;
+  color: #7e7e7e;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

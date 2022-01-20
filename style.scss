@@ -1,70 +1,7 @@
-/* Général de la page */
-*,
-::after,
-::before{
-    box-sizing: border-box;
-    
-}
+@import "./sass/base.scss";
+@import "./sass/layouts/header.scss";
+@import "./sass/layouts/localisation.scss";
+@import "./sass/layouts/reservation.scss";
+@import "./sass/layouts/selection.scss";
+@import"./sass/utils/box-shadow.scss"
 
-body
-{
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-}
-/* Header */
-header
-{
-    font-family: "Shrikhand", cursive;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-    padding: 0.5rem;
-}
-/* Partie localisation */
-.localisation
-{
-    display: flex;
-    background-color: #f3f3f3;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1rem;
-    padding: 0.5rem;
-}
-.localisation__icon{
-    font-size: 1.3rem;
-    ;
-}
-
-/* Partie réservation */
-.reservation
-{
-   text-align: center;
-}
-.reservation__btn
-{
-    margin: 15px 0px;
-    padding: 1rem;
-    border-radius: 2rem;
-    border:none;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
-    color: #fff;
-    font-size: 1.5rem;
-    box-shadow: 1px 3px 15px 3px rgba(0,0,0,0.43);
-    transition: transform 100ms;
-}
-.reservation__btn:hover
-{
-    transform: scale(1.03);
-    opacity: 0.8;
-}
-.reservation__title
-{
-    margin-top: 2rem;
-    font-size: 2rem;
-}
-.reservation__subtitle
-{
-    font-size: 1rem;
-}
