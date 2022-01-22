@@ -1,19 +1,19 @@
 @import "../utils/zoom.scss";
 @import "../utils/colors.scss";
 .selection{
+    counter-reset: steps;
     & ol{
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
-        @media (max-width: 420px) {
-            flex-direction: column;
-        }
+        gap: 2rem;
+       
     }
     & li{
         position: relative;
         &::before{
-            content: counter(numbers);
-            counter-increment: numbers;
+            
+            content: counter(steps);
+            counter-increment: steps;
             background-color: $purple;
             color: white;
             display: grid;

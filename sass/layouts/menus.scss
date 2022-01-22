@@ -1,0 +1,20 @@
+.menus {
+    background-color: $backgroundgray;
+    
+    .cards {
+        
+        height: 20rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        & .card {
+            border: 1px solid red;
+            width: 45%;
+            
+            & .card img {
+                height: 150px;
+            }
+        }
+    }
+}

@@ -7,13 +7,14 @@
 }
 
 body {
-  max-width: 420px;
-  margin: 0;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
   font-family: "Roboto", sans-serif;
 }
 
 main {
-  padding: 0 1rem;
+  padding: 0 4rem;
 }
 
 /* Header */
@@ -66,15 +67,13 @@ header {
   font-size: 1rem;
 }
 
+.selection {
+  counter-reset: steps;
+}
 .selection ol {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-}
-@media (max-width: 420px) {
-  .selection ol {
-    flex-direction: column;
-  }
+  gap: 2rem;
 }
 .selection li {
   position: relative;
@@ -86,8 +85,8 @@ header {
   box-shadow: 1px 3px 15px 3px rgba(0, 0, 0, 0.43);
 }
 .selection li::before {
-  content: counter(numbers);
-  counter-increment: numbers;
+  content: counter(steps);
+  counter-increment: steps;
   background-color: #9356dc;
   color: white;
   display: grid;
@@ -106,6 +105,24 @@ header {
   margin-right: 1rem;
   color: #7e7e7e;
   font-size: 1.5rem;
+}
+
+.menus {
+  background-color: #F6F6F6;
+}
+.menus .cards {
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.menus .cards .card {
+  border: 1px solid red;
+  width: 45%;
+}
+.menus .cards .card .card img {
+  height: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
