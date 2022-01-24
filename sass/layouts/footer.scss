@@ -1,0 +1,24 @@
+footer
+{
+    background-color: $darkgrey;
+    padding: 0 3rem;
+    color: white;
+    h2 {
+        font-family: "Shrikhand", sans-serif;
+        font-weight: 500;
+        padding:0.5rem 1rem;
+        margin-bottom: 0.5rem;
+    }
+    li{
+        list-style-type: none;
+        padding: 0.3rem;
+        
+    }
+    ul{
+        padding: 0.5rem;
+        margin: 0;
+        & a{
+            margin:1rem 0.5rem;
+        }
+    }
+}

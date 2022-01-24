@@ -4,8 +4,11 @@
     counter-reset: steps;
     & ol{
         display: flex;
-        flex-wrap: wrap;
         gap: 2rem;
+        @media (max-width: 800px) {
+            flex-direction: column;
+            
+        }
        
     }
     & li{
@@ -33,7 +36,9 @@
         border-radius: 1rem;
         @include base-shadow;
         &:hover{
-          @include zoom;  
+            cursor: pointer;
+             @include zoom;
+            background-color:#f2eafb;  
         }
         & i.fas{
             margin-right: 1rem;
