@@ -49,12 +49,7 @@
                 
 
             }
-            // .far{
-            //     color: transparent;
-            //     background-image: linear-gradient(to top,#9356DC, #FF79DA);
-            //     background-clip: text;
-            //     -webkit-background-clip: text;
-            // }
+            
             
             & .card__link{
                 display: flex;
@@ -90,32 +85,36 @@
                     animation: hearts 0.95s forwards;
                 }
             }
-            & .icon__heart{
-                background: linear-gradient(to top,#9356DC, #FF79DA);
+            .icon__heart{
                 -webkit-text-fill-color: transparent;
+                background-image: linear-gradient(to top,#9356DC, #FF79DA);
+                background-clip: text;
                 -webkit-background-clip: text;
                 display: block;
                 outline: none;
                 padding: 1px;
                 transform: scaleY(0);
                 transform-origin: 50% 50%;
-                transform: transform 3s;
-                font-size: 1.6rem;
+                transition: transform 2s;
+                font-size: 1.7rem;
                 position: absolute;
-                margin-top: 0.4rem;
-                margin-right: 0.4rem;
+                margin-top: 14px;
+                margin-right: 1px;
                 z-index: 2;
+
             }
-            & .heart__custom{
+            .heart__custom{
                 display: block;
                 outline: none;
                 position: relative;
-                padding: 2px;
-                margin-top: 0.5rem;
-                margin-right: 0.5rem;
-                font-size: 1.25rem;
-
+                padding: 1px;
+                margin-top: 0.85rem;
+                margin-right: 1rem;
+                font-size: 1.45rem;
+                font-weight: normal;
+                z-index: 2;
             }
+            
                
             & .card__new{
                 
