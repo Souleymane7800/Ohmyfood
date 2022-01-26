@@ -1,20 +1,28 @@
-@import "../utils/zoom.scss";
-@import "../utils/colors.scss";
+
 .selection{
     counter-reset: steps;
     & ol{
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
-       
+        @media (max-width: 800px) {
+            width: 90%;
+            flex-direction: column;
+            
+        }
     }
     & li{
         position: relative;
+        list-style-type: none;
+        background-color: #f6f6f6;
+        padding: 1.5rem 2rem;
+        flex-grow: 1;
+        border-radius: 1rem;
+        @include base-shadow;
         &::before{
-            
             content: counter(steps);
             counter-increment: steps;
-            background-color: $purple;
+            background-color: $primary-color;
             color: white;
             display: grid;
             place-items: center;
@@ -24,16 +32,14 @@
             position: absolute;
             bottom: 1rem;
             left: -1.2rem;
-            
         }
-        list-style-type: none;
-        background-color: #f6f6f6;
-        padding: 1.5rem 2rem;
-        flex-grow: 1;
-        border-radius: 1rem;
-        @include base-shadow;
         &:hover{
-          @include zoom;  
+            cursor: pointer;
+            @include zoom;
+            background: $light-purple;
+            & i.fas{
+              color: $primary-color;
+            }  
         }
         & i.fas{
             margin-right: 1rem;

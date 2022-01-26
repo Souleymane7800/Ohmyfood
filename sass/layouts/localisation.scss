@@ -5,10 +5,27 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    font-size: 1rem;
+    width: 100%;
+    gap: 0.5rem;
+    font-size: 2rem;
+    padding-left: 1rem;
     padding: 0.5rem;
     & .localisation__icon{
-    font-size: 1.3rem;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 5rem;
     }
+    
+    & i:hover{
+        cursor: pointer;
+    }
+    .btn__text{
+        background-color: #f3f3f3;
+        border: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+        
+    }
+    
 }

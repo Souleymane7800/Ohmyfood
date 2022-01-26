@@ -1,6 +1,6 @@
 .menus {
     background-color: $backgroundgray;
-    margin-bottom: 3rem;
+    padding-bottom: 1rem;
     & h2{
         margin-top: 2rem;
         padding: 2rem 1rem;
@@ -8,26 +8,46 @@
     .menus__cards {
         
         display: flex;
+        justify-content: center;
+        flex-direction: row;
         flex-wrap: wrap;
-        width: 90%;
-        
+        align-items: center;
         gap: 2rem;
         margin-bottom: 3rem;
-        @media (max-width: 800px){
-            flex-direction: column;
-            
-        }
+        
         & .card {
             
             border-radius: 1rem;
-            width: 98%;
-            height: auto;
+            width: 46%;
+            height: 20rem;
             overflow: hidden;
             transition: 500ms;
             @include base-shadow;
             @media (max-width: 800px) {
-                width: 98%;
+                width: 90%;
+                align-items: center;
                 
+            }
+            .tag__new{
+                position: relative;
+                
+            }
+            .tag__new::before{
+                content: "Nouveau";
+                position: absolute;
+                height: 2rem;
+                width: 6rem;
+                background-color: $third-color;
+                padding: 5px 15px 5px 15px;
+                color: darken($third-color, 45%);
+                border-radius: 0.3rem;
+                display: grid;
+                place-items: center;
+                right: 1rem;
+                top: 1rem;
+                animation-name: blinker;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;            
             }
             &:hover{
                 @include dark-shadow;
@@ -46,6 +66,7 @@
                 justify-content: space-between;
                 background: white;
                 padding: 0rem 1rem;
+                margin-bottom: 0.5rem;
                 
 
             }
@@ -65,13 +86,15 @@
                     margin-bottom: 0.2rem;
                     font-size: 1rem;
                 }
-            
+                & .card__subtitle{
+                    font-weight: 100;
+                }
             }
-            label{
+            & label{
                 opacity: 0;
                 position: absolute;
             }
-            input{
+            & input{
                 cursor: pointer;
                 position: absolute;
                 outline: none;
@@ -83,11 +106,12 @@
                 &:checked + .icon__heart{
                     
                     animation: hearts 0.95s forwards;
+                    
                 }
             }
-            .icon__heart{
+            & .icon__heart{
                 -webkit-text-fill-color: transparent;
-                background-image: linear-gradient(to top,#9356DC, #FF79DA);
+                background-image: linear-gradient(to top, $primary-color, $secondary-color);
                 background-clip: text;
                 -webkit-background-clip: text;
                 display: block;
@@ -95,40 +119,40 @@
                 padding: 1px;
                 transform: scaleY(0);
                 transform-origin: 50% 50%;
-                transition: transform 2s;
-                font-size: 1.7rem;
+                transition: all 200ms ease-in-out;
+                font-size: 1.6rem;
                 position: absolute;
-                margin-top: 14px;
-                margin-right: 1px;
+                margin-top: 0.7rem;
+                
                 z-index: 2;
 
             }
-            .heart__custom{
+            & .heart__custom{
                 display: block;
                 outline: none;
                 position: relative;
-                padding: 1px;
-                margin-top: 0.85rem;
-                margin-right: 1rem;
-                font-size: 1.45rem;
+                padding: 0.1rem;
+                margin-top: 0.7rem;
+                margin-right: 0.1rem;
+                font-size: 1.5rem;
                 font-weight: normal;
-                z-index: 2;
+                z-index: 1;
             }
             
                
-            & .card__new{
+            // & .card__new{
                 
-                font-family: "Roboto", sans-serif;
-                z-index: 1;
-                padding: 5px 15px 5px 15px;
-                border-radius: 3px;
-                top: 10px;
-                right: 10px;
-                position: absolute;
-                background-color: #99E2D0;
-                color: #3b8568;
+            //     font-family: "Roboto", sans-serif;
+            //     z-index: 1;
+            //     padding: 5px 15px 5px 15px;
+            //     border-radius: 3px;
+            //     top: 10px;
+            //     right: 10px;
+            //     position: absolute;
+            //     background-color: #99E2D0;
+            //     color: #3b8568;
                 
-            }  
+            // }   
         }    
 }
 }

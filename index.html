@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&family=Yuji+Mai&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -24,13 +25,15 @@
     <section class="localisation">
         
         <i class="fa-map-marker-alt fas localisation__icon" aria-hidden="true"></i>
-        <h3 class="localisation__text">Paris, Belleville</h3> 
+        <form action="#" method="post" class="form__btn">
+            <input class="btn__text" type="text" name="search-town" value="Paris, Belleville">
+        </form>
         
     </section>
     <section class="reservation">
         <h2 class="reservation__title">Réservez le menu qui<br>vous convient</h2>
-        <p class="reservation__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-        <button class="reservation__btn">Explorer nos restaurants</button>
+        <p class="reservation__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <button class="explorer__btn">Explorer nos restaurants</button>
     </section>
     <section class="selection">
         <div class="container">
@@ -60,9 +63,9 @@
         <div class="menus__cards">
                 <!-- Restaurant La palette du goût -->
 
-            <div class="card">
-                <a class="card__link" href="#">
-                    <span class="card__new">Nouveau</span>
+            <div class="card ">
+                <a class="card__link tag__new" href="../La_palette_du_goût.html">
+                    <!-- <span class="card__new">Nouveau</span> -->
                     <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
 
                 </a>
@@ -81,8 +84,8 @@
             </div>    
                 <!-- Restaurant La note enchantée -->
             <div class="card">
-                    <a class="card__link" href="#">
-                        <span class="card__new">Nouveau</span>
+                    <a class="card__link tag__new" href="#">
+                        <!-- <span class="card__new">Nouveau</span> -->
                         <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
 
                     </a>  
@@ -152,30 +155,28 @@
 </main>
 <footer class="footer">
     <div class="container">
-        <h2 class="footer__logo">ohmyfood</h2> 
+        <a class="footer__logo" href="#">ohmyfood</a> 
         <ul class="footer__list">
             <li class="footer__listelt">
                <a class="footer__link" href="#">
                 <i class="fa-utensils fas footer__icon" aria-hidden="true"></i>
-                
+                Proposer un restaurant
                </a>
-               <p>Proposer un restaurant</p>
+               
 
             </li>
             <li class="footer__listelt">
                 <a class="footer__link" href="#">
                     <i class="fa-hands-helping fas footer__icon" aria-hidden="true"></i>
-                    
-                </a>
-                <p>Devenir partenaire </p>  
-            </li>
-            <li class="footer__listelt2">
-                <a class="footer__link" href="#">Mentions légales
-
+                    Devenir partenaire 
                 </a>
                 
             </li>
-            <li class="footer__listelt2">
+            <li class="footer__listelt">
+                <a class="footer__link" href="#">Mentions légales</a>
+                
+            </li>
+            <li class="footer__listelt">
                 <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
             </li>
         </ul>
