@@ -263,6 +263,17 @@ header {
   font-weight: normal;
   z-index: 1;
 }
+.menus .menus__cards .card .card__new {
+  font-family: "Roboto", sans-serif;
+  z-index: 1;
+  padding: 5px 15px 5px 15px;
+  border-radius: 3px;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  background-color: #99E2D0;
+  color: #3b8568;
+}
 
 @keyframes hearts {
   0% {
@@ -325,6 +336,138 @@ footer ul .footer__listelt {
 footer ul .footer__listelt i {
   font-size: 1.2rem;
   margin-right: 0.3rem;
+}
+
+.banner img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.main__menus {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  margin-top: -4rem;
+  border-radius: 3rem 3rem 0 0;
+  padding: 1rem;
+}
+.main__menus label {
+  opacity: 0;
+  position: absolute;
+}
+.main__menus input {
+  cursor: pointer;
+  position: absolute;
+  outline: none;
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-top: 0.7rem;
+  z-index: 4;
+  opacity: 0;
+}
+.main__menus input:checked + .icon__heart {
+  animation: hearts 0.95s forwards;
+}
+.main__menus .icon__heart {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: block;
+  outline: none;
+  padding: 1px;
+  transform: scaleY(0);
+  transform-origin: 50% 50%;
+  transition: all 200ms ease-in-out;
+  font-size: 1.6rem;
+  position: absolute;
+  margin-top: 0.7rem;
+  z-index: 2;
+}
+.main__menus .heart__custom {
+  display: block;
+  outline: none;
+  position: relative;
+  padding: 0.1rem;
+  margin-top: 0.7rem;
+  margin-right: 0.1rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  z-index: 1;
+}
+.main__menus h2 {
+  margin: 1rem;
+  font-family: "Shrikhand", cursive;
+}
+
+.menus__group {
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", cursive;
+  width: 100%;
+  padding: 2.5rem;
+  gap: 1rem;
+  background-color: #F6F6F6;
+}
+@media (max-width: 800px) {
+  .menus__group {
+    flex-direction: column;
+  }
+}
+
+.menus__list {
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+.menus__item {
+  display: flex;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  gap: 2rem;
+  box-shadow: 1px 3px 15px 3px rgba(0, 0, 0, 0.43);
+}
+
+.menus-item__details h4 {
+  font-size: 1rem;
+  margin: 0;
+}
+.menus-item__details p {
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.menus-item__price {
+  margin-left: auto;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.checkout {
+  display: flex;
+  justify-content: center;
+}
+.checkout .btn__checkout {
+  margin: 15px 0px;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: none;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  color: #fff;
+  font-size: 1.5rem;
+  transition: transform 100ms;
+  box-shadow: 1px 3px 15px 3px rgba(0, 0, 0, 0.43);
+}
+.checkout .btn__checkout :hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */

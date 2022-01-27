@@ -1,0 +1,97 @@
+
+.banner img
+{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position:center bottom;
+}
+.main__menus
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: $backgroundgray;
+    margin-top: -4rem;
+    border-radius: 3rem 3rem 0 0;
+    
+    @include heart-custom;
+    padding: 1rem;
+    h2{
+        margin: 1rem;
+        
+        font-family: "Shrikhand", cursive;
+        
+    }
+}
+.menus__group{
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto", cursive;
+    width: 100%;
+    padding: 2.5rem;
+    gap: 1rem;
+    background-color: $backgroundgray;
+    @media(max-width: 800px) {
+        flex-direction: column;
+        
+    }
+}
+.menus__list
+{
+    flex-grow: 1;
+    padding: 0.5rem;
+    
+}
+.menus__item
+{
+    display: flex;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    gap: 2rem;
+    @include base-shadow
+
+    
+    
+}
+.menus-item__details{
+    & h4{
+        font-size: 1rem;
+        margin: 0;
+    }
+    & p{
+        font-size: 0.8rem;
+        font-weight: 100;
+        margin: 0;
+    }
+
+    }
+    .menus-item__price{
+        margin-left: auto;
+        font-weight: 900;
+        margin-bottom: 0;
+    }
+    .checkout{
+        display: flex;
+        justify-content: center;
+        & .btn__checkout{
+            margin: 15px 0px;
+            padding: 0.5rem;
+            border-radius: 2rem;
+            border:none;
+            @include gradient;
+            color: #fff;
+            font-size: 1.5rem;
+            transition: transform 100ms;
+            @include base-shadow;
+            & :hover{
+                cursor: pointer;
+                transform: scale(1.3);
+                opacity: 0.8;
+            }
+        }
+    }
+    
+
