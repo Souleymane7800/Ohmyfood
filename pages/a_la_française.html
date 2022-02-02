@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../build/style.min.css">
     <link href="font/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +16,12 @@
 
     <title>À la française</title>
 </head>
-<body>
-    <header>
-        <h1 class="header__logo">ohmyfood</h1>
-    </header>
+<body id="page-restau">
+    <a href="./../index.html">
+        <header>
+            <h1 class="header__logo">ohmyfood</h1>
+        </header>
+    </a>
     <div class="banner">
         <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
     </div>
@@ -34,92 +36,127 @@
             </div>
         </section>
         <section class="menus__group">
-            
+                
                 <div class="menus__list">
-                    <h3>Entrées</h3>
-                    <div class="menus__item">
-                        <div class="menus-item__details">
-                            <h4>Tartare de poulpe acidulé</h4>
-                            <p>Aux zestes d'orange</p>
+                    <h3>ENTRÉES</h3>
+                    <div class="menus-item__list">
+                        
+                        <div class="menus__item">
+                            <div class="menus-item__details">
+                                <h4>Tartare de poulpe acidulé</h4>
+                                <p>Aux zestes d'orange</p>
+                            </div>
+                            <span class="menus-item__price">25€</span>
+                            <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                            </div>
                         </div>
-                        <p class="menus-item__price">25€</p>
+                    
+                        <div class="menus__item">
+                            <div class="menus-item__details">
+                                <h4>Velouté de légumes d'antan</h4>
+                                <p>Carotte, panais, topinanbour</p>
+                            </div>
+                            <span class="menus-item__price">35€</span>
+                            <div class="menus-item-price__check">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="menus__item">
+                            <div class="menus-item__details">
+                                <h4>Soupe à l'oignon</h4>
+                                <p>Revisitée</p>
+                            </div>
+                            <span class="menus-item__price">20€</span>
+                            <div class="menus-item-price__check">
+                                <i class="fas fa-check"></i>
+                            </div>
                     </div>
-                    <div class="menus__item">
-                        <div class="menus-item__details">
-                            <h4>Velouté de légumes d'antan</h4>
-                            <p>Carotte, panais, topinanbour</p>
-                        </div>
-                        <p class="menus-item__price">35€</p>
-                    </div>
-                    <div class="menus__item">
-                        <div class="menus-item__details">
-                            <h4>Soupe à l'oignon</h4>
-                            <p>Revisitée</p>
-                        </div>
-                        <p class="menus-item__price">20€</p>
                     </div>
                 </div>
+                
                 <div class="menus__list">
-                    <h3>Plats</h3>
+                    <h3>PLATS</h3>
                     <div class="menus__item">
+                        
                         <div class="menus-item__details">
                             <h4>Coquilles Saint-Jacques</h4>
                             <p>Accompagnées d'une purée de panais</p>
                         </div>
-                        <p class="menus-item__price">40€</p>
+                        <span class="menus-item__price">40€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                     <div class="menus__item">
                         <div class="menus-item__details">
                             <h4>Magret de canard</h4>
                             <p>Et parmentier de pommes de terre</p>
                         </div>
-                        <p class="menus-item__price">35€</p>
+                        <span class="menus-item__price">35€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                     <div class="menus__item">
                         <div class="menus-item__details">
                             <h4>Pigeonneau d'Ille-et-Vilaine</h4>
                             <p>Sur son lit de gnocchis aux légumes</p>
                         </div>
-                        <p class="menus-item__price">44€</p>
+                        <span class="menus-item__price">44€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="menus__list">
-                    <h3>Desserts</h3>
+                    <h3>DÉSSERTS</h3>
                     <div class="menus__item">
+                        
                         <div class="menus-item__details">
                             <h4>Pétales de violettes glaçés</h4>
                             <p>Et purée de noisettes</p>
                         </div>
-                        <p class="menus-item__price">18€</p>
+                        <span class="menus-item__price">18€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                     <div class="menus__item">
                         <div class="menus-item__details">
                             <h4>Fondant au chocolat</h4>
                             <p>Revisité</p>
                         </div>
-                        <p class="menus-item__price">23€</p>
+                        <span class="menus-item__price">23€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                     <div class="menus__item">
                         <div class="menus-item__details">
                             <h4>Millefeuille croustillant</h4>
                             <p>Myrtilles et pâte d'amande</p>
                         </div>
-                        <p class="menus-item__price">23€</p>
+                        <span class="menus-item__price">23€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="checkout">
-                    <button class="btn__checkout">
-                        Commander
-                    </button>
-                </div>
+                
                 
                 
             
         </section>
+        <div class="checkout">
+            <button class="btn__checkout">
+                Commander
+            </button>
+        </div>
     </main>
     <footer>
         <div class="container">
-            <a class="footer__logo" href="#">ohmyfood</a> 
+            <a class="footer__logo" href="../index.html">ohmyfood</a> 
             <ul class="footer__list">
                 <li class="footer__listelt">
                    <a class="footer__link" href="#">

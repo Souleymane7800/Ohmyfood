@@ -1,10 +1,14 @@
 
 @import "../utils/colors.scss";
 @import "../utils/mixin.scss";
+
 /* Partie réservation */
 .reservation
 {
    text-align: center;
+   background-color:darken($backgroundgray,5%) ;
+   padding-top: 1.5rem;
+   padding-bottom: 3rem;
 
 & .explorer__btn
 {
@@ -32,6 +36,8 @@
 }
 & .reservation__subtitle
 {
+    
     font-size: 1rem;
+    
 }
 }

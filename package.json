@@ -4,7 +4,8 @@
   "description": "Projet 3 Openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "build": "postcss style.css -u autoprefixer cssnano -o ./build/style.min.css"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,10 @@
   "author": "SD",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.16",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
     "sass": "^1.49.0"
   }
 }

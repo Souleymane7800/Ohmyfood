@@ -2,7 +2,7 @@ footer
 {
     width: 100%;
     text-decoration: none;
-    background-color: $darkgrey;
+    background-color: darken($darkgrey,70%);
     padding: 1.5rem 2rem;
     color: white;
     & .container {
@@ -35,6 +35,7 @@ footer
         .footer__listelt{
             display: flex;
             margin: 0;
+            padding: 0.3rem 0;
             font-size: 1.5rem;
             & i{
                 font-size: 1.2rem;

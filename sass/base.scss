@@ -13,7 +13,14 @@ body
     margin: auto;
     font-family: "Roboto", sans-serif;
 }
+body a 
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
 main
 {
     padding: 0;
 }
+

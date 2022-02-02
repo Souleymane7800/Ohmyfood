@@ -1,7 +1,8 @@
+@import "../utils/colors.scss";
 .localisation
 {
     display: flex;
-    background-color: #f3f3f3;
+    background-color:darken($darkgrey,10%);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -18,12 +19,12 @@
     
     & i:hover{
         cursor: pointer;
-    }
+    } 
     .btn__text{
-        background-color: #f3f3f3;
+        background-color:darken($darkgrey,10%);
         border: none;
         font-family: "Roboto", sans-serif;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 1.2rem;
         
     }

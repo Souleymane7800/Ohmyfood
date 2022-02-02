@@ -6,7 +6,7 @@
     transform: scale(1.03);  
 }
 @mixin base-shadow {
-    box-shadow: 1px 3px 15px 3px rgba(0, 0, 0, 0.43);
+    box-shadow: 2px 1px 8px -3px #000000;
 }
 @mixin dark-shadow {
     box-shadow: 1px 3px 15px 10px rgba(0,0,0,0.43);
@@ -27,7 +27,7 @@
         opacity: 0;
         &:checked + .icon__heart{
             
-            animation: hearts 0.95s forwards;
+            animation: hearts 0.55s forwards;
             
         }
     }
@@ -38,11 +38,11 @@
         -webkit-background-clip: text;
         display: block;
         outline: none;
-        padding: 1px;
+        
         transform: scaleY(0);
         transform-origin: 50% 50%;
-        transition: all 200ms ease-in-out;
-        font-size: 1.6rem;
+        transition: all 100ms ease-in-out;
+        font-size: 2.3rem;
         position: absolute;
         margin-top: 0.7rem;
         
@@ -56,8 +56,20 @@
         padding: 0.1rem;
         margin-top: 0.7rem;
         margin-right: 0.1rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: normal;
         z-index: 1;
     }
+}
+@mixin back-arrow {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing:antialiased;
+    font-family: "Font awesome 5 free";
+    font-weight: 900;
+    position: absolute;
+    
+    
 }

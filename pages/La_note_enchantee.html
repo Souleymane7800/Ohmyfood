@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../build/style.min.css">
     <link href="font/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +16,12 @@
 
     <title>La note enchantée</title>
 </head>
-<body>
-    <header>
-        <h1 class="header__logo">ohmyfood</h1>
-    </header>
+<body id="page-restau">
+    <a href="./../index.html">
+        <header>
+            <h1 class="header__logo">ohmyfood</h1>
+        </header>
+    </a>
     <div class="banner">
         <img src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
     </div>
@@ -36,99 +38,141 @@
         <section class="menus__group">
                 <!-- Entrées -->
                 <div class="menus__list">
-                    <h3>Entrées</h3>
+                    <h3>ENTRÉES</h3>
+                    <div class="menus-item__list">
+                    
                     <div class="menus__item">
+                        
                         <div class="menus-item__details">
                             <h4>Ravioles de fois gras</h4>
                             <p>Accompagnés de leur crème à la truffe</p>
                         </div>
-                        <p class="menus-item__price">25€</p>
+                        <span class="menus-item__price">25€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                     <div class="menus__item">
                         <div class="menus-item__details">
                             <h4>Caviar osciètre</h4>
                             <p>Sur blini à la farine de blé noir</p>
                         </div>
-                        <p class="menus-item__price">35€</p>
+                        <span class="menus-item__price">35€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                     <div class="menus__item">
                         <div class="menus-item__details">
                             <h4>Homard et espuma de potiron</h4>
                             <p>Mariné aux zestes d'orange</p>
                         </div>
-                        <p class="menus-item__price">20€</p>
+                        <span class="menus-item__price">20€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                     <div class="menus__item">
                         <div class="menus-item__details">
                             <h4>Foie gras de canard cuit entier</h4>
                             <p>Confiture de figure et pain toasté</p>
                         </div>
-                        <p class="menus-item__price">35€</p>
+                        <span class="menus-item__price">35€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
+                    </div>
+                    
                 </div>
                 <!-- Plats -->
                 <div class="menus__list">
-                    <h3>Plats</h3>
+                    <h3>PLATS</h3>
+                    <div class="menus-item__list">
                     <div class="menus__item">
+                        
                         <div class="menus-item__details">
                             <h4>Noix de coquilles Saint-Jacques</h4>
                             <p>Sur lit de purée de céleri-rave</p>
                         </div>
-                        <p class="menus-item__price">40€</p>
+                        <span class="menus-item__price">40€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                     <div class="menus__item">
                         <div class="menus-item__details">
                             <h4>Langoustine poêlée</h4>
                             <p>Purée de patate douce</p>
                         </div>
-                        <p class="menus-item__price">35€</p>
+                        <span class="menus-item__price">35€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                     <div class="menus__item">
                         <div class="menus-item__details">
                             <h4>Mijoté de queue de boeuf</h4>
                             <p>Et riz sauvage aux zestes de citron</p>
                         </div>
-                        <p class="menus-item__price">44€</p>
+                        <span class="menus-item__price">44€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <!-- Désserts -->
                 <div class="menus__list">
-                    <h3>Desserts</h3>
+                    <h3>DÉSSERTS</h3>
+                    <div class="menus-item__list">
                     <div class="menus__item">
+                        
                         <div class="menus-item__details">
                             <h4>Macaron noisette et chocolat</h4>
                             <p>Glace au caramel brun et sel de Guérande</p>
                         </div>
-                        <p class="menus-item__price">18€</p>
+                        <span class="menus-item__price">18€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                     <div class="menus__item">
                         <div class="menus-item__details">
                             <h4>Baba au rhum revisité</h4>
                             <p>Avec son coulis de citron</p>
                         </div>
-                        <p class="menus-item__price">23€</p>
+                        <span class="menus-item__price">23€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                     <div class="menus__item">
                         <div class="menus-item__details">
                             <h4>Tarte au citron meringuée</h4>
                             <p>Destructurée</p>
                         </div>
-                        <p class="menus-item__price">20€</p>
+                        <span class="menus-item__price">20€</span>
+                        <div class="menus-item-price__check">
+                            <i class="fas fa-check"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="checkout">
-                    <button class="btn__checkout">
-                        Commander
-                    </button>
                 </div>
+                
                 
                 
             
         </section>
+        <div class="checkout">
+            <button class="btn__checkout">
+                Commander
+            </button>
+        </div>
     </main>
     <footer>
         <div class="container">
-            <a class="footer__logo" href="#">ohmyfood</a> 
+            <a class="footer__logo" href="../index.html">ohmyfood</a> 
             <ul class="footer__list">
                 <li class="footer__listelt">
                    <a class="footer__link" href="#">
