@@ -61,6 +61,121 @@ header {
   font-size: 1.2rem;
 }
 
+.loader {
+  position: fixed;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 99;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+  animation: loading 5s;
+  animation-fill-mode: forwards;
+  transform-origin: top;
+}
+.loader .loader h1 {
+  margin: 0;
+  padding-bottom: 25rem;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.localisation span {
+  position: relative;
+  top: 5rem;
+  display: inline-block;
+  opacity: 0;
+  transform: rotateX(-90deg);
+}
+
+.let1 {
+  animation: drop 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.let2 {
+  animation: drop 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.let3 {
+  animation: drop 1s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+.let4 {
+  animation: drop 1s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.let5 {
+  animation: drop 1s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+.let6 {
+  animation: drop 1s ease-in-out infinite;
+  animation-delay: 0.7s;
+}
+
+.let7 {
+  animation: drop 1s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+.let8 {
+  animation: drop 1s ease-in-out infinite;
+  animation-delay: 0.9s;
+}
+
+.let9 {
+  animation: drop 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+.let10 {
+  animation: drop 1s ease-in-out infinite;
+  animation-delay: 0.11s;
+}
+
+.let11 {
+  animation: drop 1s ease-in-out infinite;
+  animation-delay: 0.12s;
+}
+
+@keyframes drop {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+    top: 2rem;
+    transform: rotateX(-360deg);
+  }
+  80% {
+    opacity: 1;
+    top: 2rem;
+    transform: rotateX(-360deg);
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 6rem;
+  }
+}
 /* Partie réservation */
 .reservation {
   text-align: center;
