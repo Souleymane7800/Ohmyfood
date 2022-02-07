@@ -6,7 +6,6 @@
         transform: rotate(0);
     }
 }
-
 @keyframes hearts{
     0%{
         transform: scaleY(0);
@@ -17,7 +16,6 @@
         opacity: 1;
     }
 }
-
 @keyframes blinker {  
     0% { opacity: 1.0; }
     50% { opacity: 0.0; }

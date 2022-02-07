@@ -26,9 +26,7 @@
         z-index: 4;
         opacity: 0;
         &:checked + .icon__heart{
-            
             animation: hearts 0.55s forwards;
-            
         }
     }
     & .icon__heart{
@@ -38,16 +36,13 @@
         -webkit-background-clip: text;
         display: block;
         outline: none;
-        
         transform: scaleY(0);
         transform-origin: 50% 50%;
         transition: all 100ms ease-in-out;
-        font-size: 2.3rem;
+        font-size: 1.7rem;
         position: absolute;
         margin-top: 0.7rem;
-        
         z-index: 2;
-
     }
     & .heart__custom{
         display: block;
@@ -56,7 +51,7 @@
         padding: 0.1rem;
         margin-top: 0.7rem;
         margin-right: 0.1rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: normal;
         z-index: 1;
     }
@@ -70,6 +65,105 @@
     font-family: "Font awesome 5 free";
     font-weight: 900;
     position: absolute;
-    
-    
+    content: "\f060";
+            width: 2rem;
+            height: 2rem;
+            font-size: 1.6rem;
+            top: 2.5rem;
+            left: 2rem;
+}
+
+
+@mixin mobile-bp {
+    @media screen and (max-width:599px) {
+        #homepage {
+            .card {
+                width: 90%;
+            }
+            img {
+                height: 20vh;
+            } 
+            
+            
+            
+        }
+        #page-restau {
+            .btn__checkout {
+                width: 45%;
+            }  
+                
+        }
+
+    }
+}
+
+@mixin tablette-bp {
+    @media only screen and (min-width:600px) and (max-width:1023px) {
+            #homepage {
+                .menus__cards{
+                    flex-direction: column;
+                    .card {
+                        width: 96%;
+                        
+                        img {
+                            height: 30vh;
+                        }
+                    }
+                        
+                }
+
+            }
+            #page-restau {
+                & .banner img {
+                    display: block;
+                    height: 50vh;
+                }
+                .menus__group {
+                align-items: center;
+                & .menus__list{
+                    width: 96%;
+                }
+            }
+            .btn__checkout {
+                width: 40%;
+            }
+
+        }
+    }
+}
+@mixin desktop-bp {
+    @media  screen and (min-width:1024px) {
+        #page-restau {
+            & .banner img {
+                display: block;
+                height: 70vh;
+            }
+            .menus__group {
+                align-items: center;
+                & .menus__list{
+                width: 90%;
+                }
+            }
+            .btn__checkout{
+                width: 30%;
+            }
+    }
+    #homepage {
+            .menus{
+                flex-direction: row;
+            }
+            .menus__cards {
+                flex-direction: row;
+                .card {
+                    width: 46%;
+                    
+                }
+            }
+            img {
+                height: 40vh;
+            }
+                
+
+        }
+    }
 }

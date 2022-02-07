@@ -1,34 +1,31 @@
 @import "../utils/colors.scss";
 .localisation
 {
-    display: flex;
-    background-color:darken($darkgrey,10%);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 0.5rem;
-    font-size: 2rem;
-    padding-left: 1rem;
-    padding: 0.5rem;
-    & .localisation__icon{
-    font-size: 1rem;
+  display: flex;
+  background-color:darken($darkgrey,10%);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding: 0.5rem;
+  & .localisation__icon{
+    font-size: 1.3rem;
     padding-top: 0.5rem;
     padding-left: 5rem;
-    }
-    
-    & i:hover{
+  }
+  & i:hover{
         cursor: pointer;
     } 
     .btn__text{
         background-color:darken($darkgrey,10%);
         border: none;
         font-family: "Roboto", sans-serif;
-        font-weight: 600;
+        font-weight: 300;
         font-size: 1.2rem;
-        
     }
-    
 }
 .loader 
 {
@@ -50,16 +47,7 @@
         padding-bottom: 25rem;
         font-weight: 100;
         font-size: 2rem;
-        
-    }
-    // span {
-    //     position: relative;
-    //     top: 0.63em;  
-    //     display: inline-block;
-    //     text-transform: uppercase;  
-    //     opacity: 0;
-    //     transform: rotateX(-90deg);
-    // }
+      }
 }
 @keyframes loading 
 {
@@ -69,50 +57,31 @@
     100% {
         transform: scale(0);
     }
-
 }
-
-
-.localisation span {
-    position: relative;
-    top: 5rem;  
-    display: inline-block;
-      
-    opacity: 0;
-    transform: rotateX(-90deg);
-  }
-  
   .let1 {
     animation: drop 1s ease-in-out infinite;
     animation-delay: .2s;
   }
-  
   .let2 {
     animation: drop 1s ease-in-out infinite;
     animation-delay: .3s;
   }
-  
   .let3 {
     animation: drop 1s ease-in-out infinite;
     animation-delay: .4s;
   }
-  
   .let4 {
     animation: drop 1s ease-in-out infinite;
     animation-delay: .5s;
-  
   }
-  
   .let5 {
     animation: drop 1s ease-in-out infinite;
     animation-delay: .6s;
   }
-  
   .let6 {
     animation: drop 1s ease-in-out infinite;
     animation-delay: .7s;
   }
-  
   .let7 {
     animation: drop 1s ease-in-out infinite;
     animation-delay: .8s;
@@ -134,7 +103,7 @@
     animation-delay: .12s;
   }
   
-  @keyframes drop {
+@keyframes drop {
       10% {
           opacity: 0.5;
       }
@@ -155,5 +124,5 @@
           opacity: 0;
           top:6rem;;
       }
-  }
+}
   

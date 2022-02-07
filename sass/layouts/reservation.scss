@@ -3,41 +3,35 @@
 @import "../utils/mixin.scss";
 
 /* Partie réservation */
-.reservation
-{
-   text-align: center;
-   background-color:darken($backgroundgray,5%) ;
-   padding-top: 1.5rem;
-   padding-bottom: 3rem;
-
-& .explorer__btn
-{
-    margin: 15px 0px;
-    padding: 1rem;
-    border-radius: 2rem;
-    border:none;
-    @include gradient;
-    color: #fff;
-    font-size: 1.5rem;
+.reservation {
+    text-align: center;
+    background-color:darken($backgroundgray,5%) ;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    & .reservation__title {
+        margin-top: 2rem;
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+    & .reservation__subtitle {
+        font-size: 1rem;
+    }
+    & .explorer__btn {
+        margin: 15px 0px;
+        padding: 1rem;
+        border-radius: 2rem;
+        border:none;
+        @include gradient;
+        color: #fff;
+        font-size: 1.5rem;
+        transition: transform 100ms;
+        @include base-shadow;
+    }
+    & .explorer__btn:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+        opacity: 0.8;
+    }
+}
     
-    transition: transform 100ms;
-    @include base-shadow;
-}
-& .explorer__btn:hover
-{
-    cursor: pointer;
-    transform: scale(1.03);
-    opacity: 0.8;
-}
-& .reservation__title
-{
-    margin-top: 2rem;
-    font-size: 2rem;
-}
-& .reservation__subtitle
-{
     
-    font-size: 1rem;
-    
-}
-}
