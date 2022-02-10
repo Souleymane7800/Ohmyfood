@@ -75,7 +75,7 @@
 
 
 @mixin mobile-bp {
-    @media screen and (max-width:599px) {
+    @media screen and (max-width:767px) {
         #homepage {
             .card {
                 width: 90%;
@@ -98,9 +98,21 @@
 }
 
 @mixin tablette-bp {
-    @media only screen and (min-width:600px) and (max-width:1023px) {
+    @media only screen and (min-width:768px) and (max-width:992px) {
             #homepage {
-                .menus__cards{
+                .selection {
+                    width: 100%;
+                    & ol {
+                        display: flex;
+                        gap: 2.5rem;
+                        justify-content: center;
+                        flex-direction: row;
+                        & li {
+                            width: 44%;
+                        }
+                    }
+                } 
+                .menus__cards {
                     flex-direction: column;
                     .card {
                         width: 96%;
@@ -125,27 +137,32 @@
                 }
             }
             .btn__checkout {
-                width: 40%;
+                width: 30%;
             }
 
         }
     }
 }
 @mixin desktop-bp {
-    @media  screen and (min-width:1024px) {
+    @media only screen and (min-width:993px) {
         #page-restau {
-            & .banner img {
+            .main__menus {
+                display: flex;
+                padding: 0.5rem 4.5rem;
+            }
+            .banner img {
                 display: block;
-                height: 70vh;
+                height: 50vh;
             }
             .menus__group {
                 align-items: center;
+                
                 & .menus__list{
-                width: 90%;
+                width: 70%;
                 }
             }
             .btn__checkout{
-                width: 30%;
+                width: 20%;
             }
     }
     #homepage {
@@ -160,9 +177,11 @@
                 }
             }
             img {
-                height: 40vh;
+                height: 30vh;
             }
-                
+            ol {
+                flex-direction: row;
+            }    
 
         }
     }
