@@ -221,11 +221,6 @@ header {
   border-radius: 1rem;
   box-shadow: 2px 1px 8px -3px #000000;
 }
-@media screen and (min-width: 1024px) {
-  .selection li {
-    flex-grow: 1;
-  }
-}
 .selection li span {
   font-weight: 600;
 }
@@ -339,6 +334,9 @@ header {
   }
   #homepage ol {
     flex-direction: row;
+  }
+  #homepage ol li {
+    flex-grow: 1;
   }
 }
 #homepage .menus {
@@ -555,6 +553,9 @@ footer ul .footer__listelt i {
   #homepage ol {
     flex-direction: row;
   }
+  #homepage ol li {
+    flex-grow: 1;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   #homepage .selection {
@@ -678,7 +679,7 @@ footer ul .footer__listelt i {
 #page-restau main .main__menus h2 {
   margin: 0.5rem 0.5rem;
   font-family: "Shrikhand", cursive;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 #page-restau main .main__menus .heart__like {
   margin-bottom: 1rem;
@@ -771,6 +772,7 @@ footer ul .footer__listelt i {
 #page-restau main .menus__group .menus__list .menus__item .menus-item__price {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 900;

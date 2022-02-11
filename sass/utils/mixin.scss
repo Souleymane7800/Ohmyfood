@@ -1,6 +1,5 @@
 @mixin gradient {
     background-image: linear-gradient(to top, $primary-color, $secondary-color);
-    
 }
 @mixin zoom {
     transform: scale(1.03);  
@@ -72,8 +71,6 @@
             top: 2.5rem;
             left: 2rem;
 }
-
-
 @mixin mobile-bp {
     @media screen and (max-width:767px) {
         #homepage {
@@ -83,9 +80,6 @@
             img {
                 height: 20vh;
             } 
-            
-            
-            
         }
         #page-restau {
             .btn__checkout {
@@ -96,7 +90,6 @@
 
     }
 }
-
 @mixin tablette-bp {
     @media only screen and (min-width:768px) and (max-width:992px) {
             #homepage {
@@ -156,16 +149,15 @@
             }
             .menus__group {
                 align-items: center;
-                
                 & .menus__list{
-                width: 70%;
+                    width: 70%;
                 }
             }
             .btn__checkout{
                 width: 20%;
             }
-    }
-    #homepage {
+        }
+        #homepage {
             .menus{
                 flex-direction: row;
             }
@@ -173,7 +165,6 @@
                 flex-direction: row;
                 .card {
                     width: 46%;
-                    
                 }
             }
             img {
@@ -181,8 +172,10 @@
             }
             ol {
                 flex-direction: row;
+                & li {
+                     flex-grow: 1;
+                }
             }    
-
         }
     }
 }
