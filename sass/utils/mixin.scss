@@ -84,6 +84,9 @@
         #page-restau {
             .btn__checkout {
                 width: 45%;
+            }
+            h2 {
+                font-size: 1.7rem;
             }  
                 
         }
@@ -129,6 +132,9 @@
                     width: 96%;
                 }
             }
+            h2 {
+                font-size: 2.3rem;
+            }
             .btn__checkout {
                 width: 30%;
             }
@@ -142,6 +148,9 @@
             .main__menus {
                 display: flex;
                 padding: 0.5rem 4.5rem;
+                & h2 {
+                    font-size: 2.5rem;
+                }
             }
             .banner img {
                 display: block;
