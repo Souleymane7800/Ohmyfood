@@ -6,7 +6,8 @@
 
 **Technologies utilisées:** HTML, CSS, npm scripts, PostCSS, Autoprefixer, CSSNano
 
-![capture](./images/capture/accueil2.jpg)
+
+![ohmyfood](https://github.com/Souleymane7800/Ohmyfood/assets/94050676/9e048315-bf2f-4766-b637-0ffc1e424797)
 
 
 ## Objectifs
